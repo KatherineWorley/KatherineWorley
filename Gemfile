@@ -22,6 +22,19 @@ gem 'paperclip', '~> 6.1'
 gem 'aws-sdk-s3', '~> 1.21'
 gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
 
+# Paperclip is now compatible with aws-sdk-s3.
+
+# If you are using S3 storage, aws-sdk-s3 requires you to make a few small
+# changes:
+
+# * You must set the `s3_region`
+# * If you are explicitly setting permissions anywhere, such as in an initializer,
+#   note that the format of the permissions changed from using an underscore to
+#   using a hyphen. For example, `:public_read` needs to be changed to
+#   `public-read`.
+
+
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
