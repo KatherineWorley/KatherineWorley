@@ -12,6 +12,7 @@ Rails.application.configure do
   # Show full error reports.
   config.consider_all_requests_local = true
 
+  #devise config mailer ... to be changed in deployment, to correct port 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   
   # Enable/disable caching. By default caching is disabled.
