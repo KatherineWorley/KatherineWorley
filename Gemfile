@@ -33,8 +33,6 @@ gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
 #   using a hyphen. For example, `:public_read` needs to be changed to
 #   `public-read`.
 
-
-
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
