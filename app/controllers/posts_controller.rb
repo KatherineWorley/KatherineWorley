@@ -13,6 +13,7 @@ class PostsController < ApplicationController
 		@post = current_user.posts.build
 	end 
 
+
 	def create 
 		@post = current_user.posts.build(post_params)
 		if @post.save
