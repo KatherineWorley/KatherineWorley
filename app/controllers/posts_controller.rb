@@ -38,6 +38,7 @@ class PostsController < ApplicationController
 		redirect_to root_path
 	end
 
+
 	private
 
 	def find_post
