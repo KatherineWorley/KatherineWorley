@@ -4,6 +4,9 @@
 %p= @post.description
 %p= @post.user.name
 
+#comment
+	%h2.comment_count= pluralize(@post.comments.count, "Comment")
+
 
 = link_to "Home", root_path
 = link_to "Edit", edit_post_path(@post)
