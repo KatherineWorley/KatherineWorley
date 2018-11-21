@@ -1,5 +1,7 @@
 class Photo < ApplicationRecord
-		def thumbnail
-			return self.image.variant(resize: '300x300')
-		end		
+	belongs_to :user
+
+	def thumbnail
+		return self.image.variant(resize: '300x300')
+	end
 end

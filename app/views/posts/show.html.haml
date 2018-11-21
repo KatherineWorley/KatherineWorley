@@ -1,8 +1,9 @@
-/ = image_tag @post.image.url(:medium)
 %h1= @post.title
 %p= @post.link
+%p= @post.image
 %p= @post.description
 %p= @post.user.name
+
 
 #comment
 	%h2.comment_count= pluralize(@post.comments.count, "Comment")
