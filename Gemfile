@@ -21,6 +21,7 @@ gem 'devise', '~> 4.5'
 gem 'paperclip', '~> 6.1'
 gem 'aws-sdk-s3', '~> 1.21'
 gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
+gem 'mini_magick', '~> 4.5', '>= 4.5.1'
 
 # Paperclip is now compatible with aws-sdk-s3.
 
