@@ -1,9 +1,8 @@
 %h1= @post.title
 %p= @post.link
-%p= @post.photo
+%p= @photo 
 %p= @post.description
-%p= @post.user.name
-
+%p= @post.user.name 
 
 #comment
 	%h2.comment_count= pluralize(@post.comments.count, "Comment")
