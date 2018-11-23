@@ -52,10 +52,6 @@ class PhotosController < ApplicationController
     end
   end
 
-  def thumbnail
-  			return self.image.variant(resize: '300x300')
-  end		
-
   # DELETE /photos/1
   # DELETE /photos/1.json
   def destroy
@@ -74,6 +70,6 @@ class PhotosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def photo_params
-      params.require(:photo).permit(:title, :photo)
+      params.require(:photo).permit(:title, :image)
     end
 end
