@@ -23,6 +23,7 @@ class PhotosController < ApplicationController
   def edit
   end
 
+
   # POST /photos
   # POST /photos.json
   def create
